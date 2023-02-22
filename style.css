@@ -10,7 +10,7 @@
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
   }
-  
+
   button, input {
     color: inherit;
     font: inherit;
@@ -64,7 +64,7 @@
     padding: 8px 0;
   }
 
-  .header-top {
+  .header-top, .header-bottom {
     display: grid;
     grid-template-columns: auto 1fr auto auto auto;
     align-items: center;
@@ -85,4 +85,9 @@
     border-radius: 50%;
     object-fit: cover; /* crop the image to fit the container */
     object-position: center; /* center the image within the container */
+  }
+
+  .av-big {
+    width: 75px;
+    height: 75px;
   }
