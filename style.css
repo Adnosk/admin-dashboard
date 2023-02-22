@@ -12,7 +12,6 @@
   }
 
   button, input {
-    color: inherit;
     font: inherit;
 }
   
@@ -69,6 +68,10 @@
     grid-template-columns: auto 1fr auto auto auto;
     align-items: center;
     gap: 15px;
+  }
+
+  .header-top {
+    margin-bottom: 2rem;
   }
 
   #search {
