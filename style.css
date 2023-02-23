@@ -7,8 +7,9 @@
     --main-padding:25px 35px;
     --grey:#dfdfdf;
     --shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --gap:15px;
-    --big-gap:30px;
+    --gap:1rem;
+    --big-gap:2rem;
+    --radius-box:10px;
   }
   
   body {
@@ -44,8 +45,7 @@
     padding: var(--main-padding);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: var(--gap);
+    gap: var(--big-gap);
   }
 
   .icon {
@@ -139,7 +139,7 @@
     padding: var(--main-padding);
     box-shadow: var(--shadow);
     display: grid;
-    border-radius: 10px;
+    border-radius: var(--radius-box);
     border-left: 10px solid red;
   }
 
@@ -153,4 +153,36 @@
 
   .box-icons img {
     width: 28px;
+  }
+
+  .announ-box {
+    background-color: white;
+    padding: var(--main-padding);
+    border-radius: var(--radius-box);
+    box-shadow: var(--shadow);
+  }
+
+  .announ-box p ~ p{
+    border-top: 2px solid var(--grey);
+    padding-top: 1rem;
+  }
+
+  .trending-box {
+    background-color: white;
+    padding: var(--main-padding);
+    border-radius: var(--radius-box);
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: var(--big-gap);
+  }
+
+  .person-box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--gap);
+    align-items: center;
+  }
+
+  .person-content p {
+    margin: 0;
   }
