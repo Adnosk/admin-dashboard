@@ -130,11 +130,27 @@
 
   .boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: var(--big-gap);
   }
 
   .box {
     background-color: white;
     padding: var(--main-padding);
+    box-shadow: var(--shadow);
+    display: grid;
+    border-radius: 10px;
+    border-left: 10px solid red;
+  }
+
+  .box h3 {
+    margin-bottom: 0px;
+  }
+
+  .box-icons {
+    justify-self: end;
+  }
+
+  .box-icons img {
+    width: 28px;
   }
